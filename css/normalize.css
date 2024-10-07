@@ -1,0 +1,15 @@
+*, 
+*:after,
+*:before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 62.5%; /* 1rem = 10px*/
+}
+
+body{
+    font-size: 100%;
+    list-style-type: none;
+}
+
