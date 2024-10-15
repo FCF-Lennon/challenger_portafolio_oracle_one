@@ -150,6 +150,45 @@ body {
 }
 
 
+/* seccion skills */
+
+.seccion__skills {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0 0 0;
+    text-align: center;
+}
+
+.skills__title {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.skills__container {
+    display: flex;
+    flex-flow: row wrap;
+    padding:32px 4.267vw 16px;
+    gap: 16px;
+}
+
+.skill__item {
+    background-color: #ffffff;
+    height: 118px;
+    width: 156px;
+    flex-grow: 1;
+    padding: 16px;
+    text-align: start;
+    display: block;
+    align-content: end;
+}
+
+
+.skill__title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-top: 8px;
+}
+
 @media (min-width: 768px) {
 
     .header__container {
@@ -158,12 +197,16 @@ body {
 
     /* seccion sobre mi */
     
+    .seccion__sobremi {
+        gap: 40px;
+    }
     .presentacion__container {
         flex-flow: row;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
         flex: 1;
+        padding-top: 40px;
     }
 
 
@@ -191,6 +234,26 @@ body {
         height: 24px;
     }
 
+    /* introduccion */
+
+    .introduccion__container-division {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    /* seccion skills */
+    .seccion__skills {
+        padding-top: 32px;
+    }
+
+    .skills__container {
+        padding-bottom: 32px;
+    }
+
+    .skill__item {
+        flex: 1 1 calc(33.33% - 16px);
+    }
+
 }
 
 
@@ -211,8 +274,12 @@ body {
 
     /* seccion sobre mi*/
 
+    .seccion__sobremi {
+        gap: 0px;
+    }
+
     .presentacion__container {
-        padding:32px 12vw;
+        padding:62px 12vw;
     }
 
     .presentacion__img {
@@ -252,7 +319,7 @@ body {
     /* Introduccion */
 
     .introduccion__container-division {
-        padding:32px 12vw;
+        padding:62px 12vw;
     }
 
     .introduccion__container-division h2 {
@@ -261,5 +328,19 @@ body {
 
     .introduccion__container-division p {
         font-size: 1.6rem;
+    }
+
+    /* seccion skills */
+
+    .skills__title {
+        font-size: 3.2rem;
+    }
+
+    .skills__container {
+        padding:32px 12vw;
+    }
+
+    .skill__item {
+        flex: 1;
     }
 }
