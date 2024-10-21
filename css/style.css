@@ -4,6 +4,7 @@
     /*color secciones*/
     --color-primario: #F5F5F5;
     --color-secundario: #EAF2FD;
+    --color-card: #ffffff;
     /*color textos*/
     --color-textos: #464646;
 }
@@ -155,7 +156,7 @@ body {
 .seccion__skills {
     display: flex;
     flex-direction: column;
-    padding: 16px 0 0 0;
+    padding: 16px 0 0;
     text-align: center;
 }
 
@@ -172,7 +173,7 @@ body {
 }
 
 .skill__item {
-    background-color: #ffffff;
+    background-color: var(--color-card);
     height: 118px;
     width: 156px;
     flex-grow: 1;
@@ -188,6 +189,46 @@ body {
     font-weight: bold;
     padding-top: 8px;
 }
+
+/* seccion hobbies */
+
+.seccion__hobbies {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0 0;
+    text-align: center;
+}
+
+.hobbies__title {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.hobbies__container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 32px 4.267vw 16px;
+    gap: 16px;
+}
+
+.hobbie__item {
+    background-color: var(--color-card);
+    height: 118px;
+    width: 156px;
+    flex-grow: 1;
+    padding: 16px;
+    text-align: start;
+    display: block;
+    align-content: end;
+}
+
+.hobbie__title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-top: 8px;
+}
+
+
 
 @media (min-width: 768px) {
 
@@ -242,6 +283,7 @@ body {
     }
 
     /* seccion skills */
+
     .seccion__skills {
         padding-top: 32px;
     }
@@ -251,6 +293,16 @@ body {
     }
 
     .skill__item {
+        flex: 1 1 calc(33.33% - 16px);
+    }
+
+    /* seccion hobbies */
+
+    .hobbies__container {
+        padding-bottom: 32px;
+    }
+
+    .hobbie__item {
         flex: 1 1 calc(33.33% - 16px);
     }
 
@@ -343,4 +395,24 @@ body {
     .skill__item {
         flex: 1;
     }
+
+    /* seccion hobbies */
+
+    .seccion__hobbies {
+        padding-top: 0;
+    }
+
+    .hobbies__title {
+        font-size: 3.2rem;
+    }
+
+    .hobbies__container {
+        padding: 32px 12vw;
+    }
+
+    .hobbie__item {
+        flex: 1;
+        white-space: nowrap;
+    }
+
 }
