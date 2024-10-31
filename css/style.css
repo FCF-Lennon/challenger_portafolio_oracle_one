@@ -7,6 +7,11 @@
     --color-card: #ffffff;
     /*color textos*/
     --color-textos: #464646;
+    /*color botones*/
+    --color-boton-hover: #2A7AE4;
+    --color-boton-texto-hover: #ffffff;
+    --color-boton-texto: #2A7AE4;
+    
 }
 
 html {
@@ -288,6 +293,80 @@ body {
     text-align: start;
 }
 
+/* seccion experiencia profesional */
+
+.seccion__experiencias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 32px;
+}
+
+.experiencias__title {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.experiencias__container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    width: 100%;
+}
+
+.experiencia__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.experiencia__img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.experiencia__img-container img {
+    flex-grow: 1;
+}
+
+.experiencia__title {
+font-size: 1.6rem;
+font-weight: bold;
+padding-top: 8px;
+}
+
+.experiencia__descripcion {
+    font-size: 1.4rem;
+    font-weight: Medium;
+}
+
+.experiencia__botones {
+    display: flex;
+    gap: 16px;
+    min-height: 40px;
+    max-height: 51px;
+}
+
+.experiencia__boton-repositorio {
+    color: var(--color-boton-texto);
+    border: 1px solid var(--color-boton-texto);
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 12px 16px;
+}
+
+.experiencia__boton-verdemo {
+    background-color: var(--color-boton-hover);
+    color: var(--color-boton-texto-hover);
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 12px 16px;
+}
+
 @media (min-width: 768px) {
 
     .header__container {
@@ -490,10 +569,6 @@ body {
         padding: 32px 12vw;
     }
 
-    .antecedentes__academicos-container {
-        
-    }
-
     .antecedentes__academicos-title {
         font-size: 3.2rem;
     }
@@ -505,4 +580,53 @@ body {
     .antecendente__academico-descripcion {
         font-size: 1.6rem;
     }
+
+    /* seccion experiencia profesional */
+
+    .seccion__experiencias {
+        padding: 32px 12vw;
+    }
+
+    .experiencias__title {
+        font-size: 3.2rem;
+    }
+
+   .experiencia__item {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto;
+   }
+
+   .experiencia__item .experiencia__img-container {
+        grid-row: 1/10;
+   }
+
+   .experiencia__item h3 {
+        font-size: 2.2rem;
+        font-weight: bold;
+        grid-row: 4;
+   }
+
+   .experiencia__item p{
+        font-size: 1.6rem;
+        font-weight: medium;
+        grid-row: 5;
+   }
+
+   .experiencia__botones {
+        grid-row: 6;
+   }
+
+   .experiencia__boton-repositorio,
+   .experiencia__boton-verdemo {
+        font-size: 1.6rem;
+        font-weight: 300;
+        padding: 16px;
+   }
+
+   .invertida:nth-child(1) {
+        grid-template-columns: 30% 70%;
+        grid-column: 2;
+   }
 }
+
