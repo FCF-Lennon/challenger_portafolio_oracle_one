@@ -25,7 +25,7 @@ inputContainers.forEach(container => {
             placeholder.style.fontSize = '16px';
             input.style.borderBottom = '0px';
         } else {
-            input.style.borderBottom = '4px solid #C8C8C8';// en caso del input esta lleno devulve y sin el foco vuelve a su color de origen
+            input.style.borderBottom = '4px solid #C8C8C8'; // cambia el color del borde sin focus
             placeholder.style.color = '#A2A2A2';
         }
 

@@ -428,7 +428,6 @@ padding-top: 8px;
     display: flex;
     flex-direction: column;
     position: relative;
-    
 }
 
 .input__container:nth-child(4) {
@@ -472,7 +471,7 @@ padding-top: 8px;
 /* Ajuste del placeholder al enfocar */
 .contacto__item-input:focus + .contacto__item-input-placeholder,
 .contacto__item-textarea:focus + .contacto__item-textarea-placeholder {
-    top: -20px; /* Ajuste para mantener 4px de separación */
+    top: -4px; /* Ajuste para mantener 4px de separación */
     color: var(--color-boton-texto); /* Cambia el color al enfocar */
 }
 
@@ -497,6 +496,25 @@ padding-top: 8px;
     font-weight: 400;
     color: var(--color-boton-texto-hover);
     padding: 12px 16px;
+}
+
+/* seccion rodapie */
+
+.rodapie__container {
+    background-color: var(--color-card);
+    display: flex;
+    min-height: 102px;
+    justify-content: center; 
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.rodapie__title {
+    font-weight: 400;
+    font-size: 1.6rem;
+    align-self: center;   
+    text-align: center;
 }
 
 @media (min-width: 768px) {
