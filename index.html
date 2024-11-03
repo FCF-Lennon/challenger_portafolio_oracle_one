@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\normalize.css">
     <link rel="stylesheet" href="css\style.css">
+    <script src="/js/main.js" defer></script>
     <title>Portafolio</title>
 </head>
 <body>
@@ -27,7 +28,7 @@
     <main>
         <section class="seccion__sobremi" id="sobre-mi">
             <figure class="presentacion__container">
-                <img class="presentacion__img" src="assets\banner\avatarportafolio.jpg" alt="Un niño con gafas">
+                <img class="presentacion__img" src="assets\banner\perfil_izqder.png" alt="hombre con gafas sosteniendo un ipad">
                 <figcapton class="presentacion__descripcion">
                     <h1>Hola, mi nombre es FelipeDev y construyo paginas web</h1>
                     <p>Soy Analista Programador de Inacap, actualmente me encuentro cursando la ingenieria en informatica en 
@@ -163,9 +164,35 @@
                 </section>
             </div>
         </section>
-        <section class="seccion__contacto" id="contacto"></section>
+        <section class="seccion__contacto" id="contacto">
+            <div class="contacto__container-img">
+                <img src="assets\contacto\contacto_izqder.jpg" alt="hombre con gafas sosteniendo un ipad">
+            </div>
+            <div class="contacto__container-items">
+                <h2 class="contacto__item-title">Contacto</h2>
+                <p class="contacto__item-descripcion">¿Quieres contactarme?<br>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+                <div class="contacto__container-item-inputs">
+                    <div class="input__container">
+                        <input type="text" id="nombre" class="contacto__item-input" required placeholder=" ">
+                        <label for="nombre" class="contacto__item-input-placeholder">Nombre</label>
+                    </div>
+                    <div class="input__container">
+                        <input type="email" id="email" class="contacto__item-input" required placeholder=" ">
+                        <label for="email" class="contacto__item-input-placeholder">Correo electrónico</label>
+                    </div>
+                    <div class="input__container">
+                        <input type="text" id="asunto" class="contacto__item-input" required placeholder=" ">
+                        <label for="asunto" class="contacto__item-input-placeholder">Asunto</label>
+                    </div>
+                    <div class="input__container">
+                        <textarea name="" id="mensaje" class="contacto__item-textarea"></textarea>
+                        <label for="mensaje" class="contacto__item-textarea-placeholder">Mensaje</label>
+                    </div>
+                    <button class="contacto__item-boton">Enviar mensaje</button>
+                </div>
+            </div>
+        </section>
     </main>
-    <!-- OJO agregar un boton para ver el cv en formato pdf -->
     <footer class="rodapie__container"></footer>
 </body>
 </html>

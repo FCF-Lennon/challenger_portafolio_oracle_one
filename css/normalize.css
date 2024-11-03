@@ -7,6 +7,7 @@
     text-decoration: none;
     list-style: none;
     font-size: 62.5%; /* 1rem = 10px*/
+    resize: none;
 }
 
 body{
