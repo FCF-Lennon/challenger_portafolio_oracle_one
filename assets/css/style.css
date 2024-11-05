@@ -39,7 +39,7 @@ body {
     align-items: center;
     height: auto;
     width: 100%;
-    padding:16px 4.267vw;
+    padding: 16px 4.267vw;
     height: auto;
 }
 
@@ -71,6 +71,7 @@ body {
 
 .header__menu-item a{
     font-size: 1.6rem;
+    color: inherit;
 }
 
 .header__menu-item a:active, 
@@ -610,11 +611,10 @@ padding-top: 8px;
 
 @media (min-width: 1100px) {
 
-
     .header__container {
-        background-color: #EAF2FD;
+        background-color: var(--color-card);
         justify-content: space-around;
-        padding: 20px 12vw;
+        padding: 10px 12vw;
         position: fixed;
         z-index: 99999;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -622,14 +622,50 @@ padding-top: 8px;
         left: 0;
         right: 0;
     }
+
+    .header__logo {
+        filter: sepia(1) saturate(10) hue-rotate(200deg);
+    }
+
+    .header__title {
+        font-size: 1.8rem;
+        color: var(--color-boton-hover);
+    }
+
+    .header__menu-list {
+        height: 39px;
+    }
     
     .header__menu-item:nth-child(1),
     .header__menu-item:nth-child(2),
     .header__menu-item:nth-child(3),
     .header__menu-item:nth-child(4),
-    .header__menu-item:nth-child(5){
-        display: block;
+    .header__menu-item:nth-child(5),
+    .header__menu-item:nth-child(6){
+        display: inline-block;
+        align-self: center;
+        box-sizing: border-box;
+        position: relative;
     }
+
+    /* animacion del menu con pseudo-elemento */
+
+    .header__menu-item a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: var(--color-textos);
+        transition: width 0.3s ease;
+        
+    }
+
+    .header__menu-item a:hover::after {
+        width: 100%;
+    }
+
 
     /* seccion sobre mi*/
 
